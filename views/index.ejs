@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MeanStock</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/angular-chart.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="/javascripts/Chart.min.js"></script>
+    <script src="/javascripts/angular-ui-router.js"></script>
+    <script src="/javascripts/angular-chart.js"></script>
+    <script src="/javascripts/angApp.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="mainCtrl">
+  <div class="col-md-12"><h3 class="col-md-offset-1 header">MeanStock</h3></div>
+    <div class="container" >
+      <div class="col-md-8">
+        <canvas id="line" class="chart chart-line" chart-data="data"
+        chart-labels="labels" chart-legend="false" chart-series="series">
+        </canvas> 
+      </div>
+      <form ng-submit="findData(input)" class="form-inline col-md-3">
+        <input class="form-control"type="text" ng-model="input" placeholder="add to stock">
+        <button class="btn btn-info">Add</button>
+      </form>
+      
+      <div class="col-md-3" ng-repeat="serie in series">
+        <div class="series col-md-4">{{serie}}</div><button href="#" >x</button></div>
+      </div>
+    </div>
+    {{datas[0].dataset.data[0]}}
+    <!--<footer class="navbar navbar-inverse navbar-fixed-bottom text-center">-->
+    <!--    <div class="container-fluid"><a class="hm" href="#">ad</a></div>-->
+    <!--</footer>-->
+  </body>
+</html>

@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #34495E;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.series {display: inline-block !important; margin: 10px 30px; color: #E4F1FE;}
+form { margin-bottom: 30px; }
+h3 {color: white; }
+.header { margin-bottom: 20px; }
+.hm { margin-top: 20px; }
+.serie {display: inline-block; }
+.line-legend li { display: inline-block; margin-right: 10px; margin-top: 10px; }
+
