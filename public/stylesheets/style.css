@@ -7,7 +7,7 @@ body {
 a {
   color: #00B7FF;
 }
-
+.button { margin-left: 20px; }
 .series {display: inline-block !important; margin: 10px 30px; color: #E4F1FE;}
 form { margin-bottom: 30px; }
 h3 {color: white; }

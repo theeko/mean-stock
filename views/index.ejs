@@ -22,15 +22,16 @@
         </canvas> 
       </div>
       <form ng-submit="findData(input)" class="form-inline col-md-3">
-        <input class="form-control"type="text" ng-model="input" placeholder="add to stock">
+        <input class="form-control inputfield"type="text" ng-model="input" placeholder="add to stock">
         <button class="btn btn-info">Add</button>
       </form>
       
-      <div class="col-md-3" ng-repeat="serie in series">
-        <div class="series col-md-4">{{serie}}</div><button href="#" >x</button></div>
+      <div class="col-md-3" ng-repeat="serie in series track by $index">
+        <div class="series col-md-6">
+          <span>{{serie}}</span><button class="btn btn-danger button" ng-click="delete($index)">x</button>
+        </div>
       </div>
     </div>
-    {{datas[0].dataset.data[0]}}
     <!--<footer class="navbar navbar-inverse navbar-fixed-bottom text-center">-->
     <!--    <div class="container-fluid"><a class="hm" href="#">ad</a></div>-->
     <!--</footer>-->
